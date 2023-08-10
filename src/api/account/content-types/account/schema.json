@@ -41,6 +41,12 @@
       "relation": "oneToMany",
       "target": "api::link.link",
       "mappedBy": "account"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "account"
     }
   }
 }
